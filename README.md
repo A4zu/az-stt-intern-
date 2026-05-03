@@ -98,27 +98,19 @@ push_to_hub                 = False
 
 ---
 
-### 2️Lazımi paketlərin quraşdırılması
+### 	Kodu işə salmaq üçün addımlar (setup + run)
+1) git clone <repo>
+2) cd <repo>
+3) python -m venv venv && source venv/bin/activate
+4) pip install -r requirements.txt
 
+TRAIN etmək üçün:
+   training/whisper_train.ipynb aç və run et
 
-
-```bash
-!pip install -q --upgrade datasets[audio] transformers accelerate evaluate jiwer tensorboard
-!pip install -q --upgrade pip
-
-!pip install -q --upgrade \
-    "datasets[audio]" \
-    transformers \
-    accelerate \
-    evaluate \
-    jiwer \
-    soundfile \
-    librosa
-
-!pip install --upgrade pip
-!pip install --upgrade datasets[audio] transformers accelerate evaluate jiwer tensorboard
-!pip install --upgrade torch torchvision torchaudio
-
+TEST etmək üçün:
+   evaluation/whisper_eval.ipynb aç və run et
+ Nəticələr:
+   results/results.pdf
 
 
 
