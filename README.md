@@ -104,16 +104,6 @@ push_to_hub                 = False
 3) python -m venv venv && source venv/bin/activate
 4) pip install -r requirements.txt
 
-TRAIN etmək üçün:
-   training/whisper_train.ipynb aç və run et
-
-TEST etmək üçün:
-   evaluation/whisper_eval.ipynb aç və run et
- Nəticələr:
-   results/results.pdf
-
-
-
 
 
 
